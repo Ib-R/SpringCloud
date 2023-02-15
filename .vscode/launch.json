@@ -61,7 +61,7 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.ibr.configserver.ConfigServerApplication",
             "projectName": "config-server",
-            "args": "",
+            "args": "--spring.profiles.active=jdbc",
             "envFile": "${workspaceFolder}/.env"
         }
     ]

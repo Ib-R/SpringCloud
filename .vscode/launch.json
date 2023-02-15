@@ -8,6 +8,38 @@
             "mainClass": "com.frankmoley.lil.roomreservationservice.RoomReservationServiceApplication",
             "projectName": "room-reservation-service",
             "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=49192 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=room-reservation-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ReservationServiceApplication<reservation-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.frankmoley.lil.reservationservice.ReservationServiceApplication",
+            "projectName": "reservation-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RoomServiceApplication<room-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.frankmoley.lil.roomservice.RoomServiceApplication",
+            "projectName": "room-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=49236 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=room-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GuestServiceApplication<guest-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.frankmoley.lil.guestservice.GuestServiceApplication",
+            "projectName": "guest-service",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]

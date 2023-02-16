@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GatewayApplication",
+            "request": "launch",
+            "mainClass": "com.ibr.gateway.GatewayApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch GatewayApplication",
+            "request": "launch",
+            "mainClass": "com.ibr.gateway.GatewayApplication",
+            "projectName": "gateway"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-RoomReservationServiceApplication<room-reservation-service>",
             "request": "launch",
             "cwd": "${workspaceFolder}",

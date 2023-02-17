@@ -1,3 +1,7 @@
 INSERT INTO `PROPERTIES` (`APPLICATION`, `PROFILE`, `LABEL`, `KEY`, `VALUE`)
 VALUES ('room-res-service', 'default', 'latest', 'some.secret', '{cipher}AgB6zwRk5AfkUdQ9ChumEpiRh2ptPzUJ5pfoJBuDxpRfANVs9S02QWbwITbfNaMnKMd9mWux52tM7xln3RFeShG6PqzP7N1FHQ82NmwmxP6d+mR0XzmfJQ386ej7h9cP8dlvcUgjjy5zAMFkRYpPxjK2EsBa7tD2GQ5si+VQIU41dKNVzDu8IfIn+nupvVRKSArvvhgcrAJGNh7YEEgT1gS7a+Abs+PtHNcVicV8LE/CoPr5wSHV6l0vRd8MXAv1/nQwRGhs0oDOqaI4nW31PURy1MhcpDs1GpGz4n/YoYhgNui/lsPQh8rAbQ8u8iTl7vm9PELKJf+Zhd2fMcYRLYZkyUwQR0f298TScs7w1kvKuz9XGbGEx5ptbIU1OVhCV8P5k/Vsv/Bnuf14ckwpWzS6/rsiq/gC3CoYlTZT7i9mXDzBRLn/rdyN2uzB9fOfWSLVakCqNYxdXkut2JQHn0hv/xmmgw1rFYbFNZ+YxMGrbltdP/JiZb49uZzFMW36Btm/R6Dih0a5QUwpTSm56UyssThziVICjDZSimK3GFSV/FA40yQ0oNNb+ocbJ+kuUgOhMNJRyZzKe+c+B4lpZfkkyH9hrhUr+VK3IYLvmVbrHUnNXzlJNcjinnEfPLVr35MPJVK09nLEcxWyKNjFWtTdbY26XbjXAOMuDyJh54T8bzgIIq+QMnmH82Kn4LAPLk5emJMSo9BPqKS0wkokglyd'),
-('room-res-service', 'default', 'latest', 'server.port', '9090');
+('room-res-service', 'default', 'latest', 'server.port', '9090'),
+('gateway', 'default', 'latest', 'server.port', '8080'),
+('gateway', 'default', 'latest', 'spring.cloud.gateway.routes.[0].id', 'roomReservations'),
+('gateway', 'default', 'latest', 'spring.cloud.gateway.routes.[0].predicates[0]', 'Path=/roomReservations'),
+('gateway', 'default', 'latest', 'spring.cloud.gateway.routes.[0].uri', 'lb://room-res-service');

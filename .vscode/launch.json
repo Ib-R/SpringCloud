@@ -5,13 +5,6 @@
             "name": "Launch GatewayApplication",
             "request": "launch",
             "mainClass": "com.ibr.gateway.GatewayApplication",
-            "projectName": ""
-        },
-        {
-            "type": "java",
-            "name": "Launch GatewayApplication",
-            "request": "launch",
-            "mainClass": "com.ibr.gateway.GatewayApplication",
             "projectName": "gateway"
         },
         {
